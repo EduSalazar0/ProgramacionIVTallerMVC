@@ -21,7 +21,7 @@ namespace ProgramacionIVTallerMVC.Models
         public bool AceptaExtranjeros { get; set; }
 
         [ForeignKey("Estadio")]
-        public int IDEstadio { get; set; }
+        public int IdEstadio { get; set; }
 
         public virtual Estadio? Estadio { get; set; } = null!;
     }
