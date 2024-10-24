@@ -6,26 +6,65 @@
     <title>@ViewData["Title"] - ProgramacionIVTallerMVC</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/ProgramacionIVTallerMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TallerMVCProgramacion.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProgramacionIVTallerMVC</a>
+                <div class="d-flex flex-column align-items-center">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
+                        <img class="navbar-brand mb-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Football_of_Ecuador_-_Liga_Pro_logo_%28normal%29.svg/800px-Football_of_Ecuador_-_Liga_Pro_logo_%28normal%29.svg.png" width="110" height="80" />
+                    </a>
+                    <a class="navbar-brand custom-link" asp-area="" asp-controller="Home" asp-action="Index">LigaPro-Ecuador</a>
+                </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+                        <li class="nav-item justify-content-between">
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                                <a asp-area="" asp-controller="Home" asp-action="Privacy">
+                                    <img class="navbar-brand mb-2 " src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f513.png" width="50" height="60" />
+                                </a>
+                                <a class="nav-link text-white justify-content-between" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item justify-content-between">
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                                <a asp-area="" asp-controller="Jugador" asp-action="Index">
+                                    <img class="navbar-brand mb-2 " src="https://png.pngtree.com/png-clipart/20220109/original/pngtree-football-player-png-image_7021875.png" width="50" height="60" />
+                                </a>
+                                <a class="nav-link text-white" asp-area="" asp-controller="Jugador" asp-action="Index">Jugador</a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item justify-content-between">
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                                <a asp-area="" asp-controller="Equipo" asp-action="Index">
+                                    <img class="navbar-brand mb-2 " src="https://cdn-icons-png.flaticon.com/512/921/921360.png" width="50" height="60" />
+                                </a>
+                                <a class="nav-link text-white" asp-area="" asp-controller="Equipo" asp-action="Index">Equipo</a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item justify-content-between">
+                            <div class="d-flex flex-column align-items-center justify-content-between">
+                                <a asp-area="" asp-controller="Estadio" asp-action="Index">
+                                    <img class="navbar-brand mb-2 " src="https://cdn-icons-png.freepik.com/512/6767/6767307.png" width="50" height="60" />
+                                </a>
+                                <a class="nav-link text-white" asp-area="" asp-controller="Estadio" asp-action="Index">Estadio</a>
+                            </div>
+
                         </li>
                     </ul>
+                    <span class="navbar-text " style="text-transform: uppercase; font-weight: bold; color: white;">
+                        PAGINA OFICIAL LA LIGA PRO ECUADOR
+                    </span>
                 </div>
             </div>
         </nav>
@@ -38,7 +77,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - ProgramacionIVTallerMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - LaLigaPro - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
